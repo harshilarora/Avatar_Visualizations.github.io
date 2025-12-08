@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avatar - The World of Pandora</title>
   <link rel="stylesheet" href="Index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+
+
 
 </head>
 <body>
@@ -89,7 +92,12 @@
           The Avatar movies, along with being international sensations, also reflect a variety of trends that emerged in Hollywood with the rise of storytelling techniques and technologies between the two movies. Along with that, the films were released during two different eras of the entertainment industry, with the change in attitudes toward the theater experience between the two releases, as well as the call for more diversity in our films. These movies are a great case study of Hollywood and the trends of the entertainment industry as a whole.
         </p>
       </div>
+      <div>
+        <div id="observablehq-geoMap-3864cced"></div>
+      </div>
     </section>
+
+  
 
     <!-- New Technologies Section -->
     <div class="bottom-text">
@@ -152,6 +160,15 @@
       });
     });
   </script>
+
+  <script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/7692a089fb1ef3a6@304.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "geoMap") return new Inspector(document.querySelector("#observablehq-geoMap-3864cced"));
+});
+</script>
+
 
 </body>
 </html>
