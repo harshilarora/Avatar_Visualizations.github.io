@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avatar - Visualization 1</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  <link rel="stylesheet" href="../Index.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav class="modern-nav">
+    <div class="nav-container">
+      <div class="brand">AVATAR</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="vis1.html" class="active">Vis 1</a></li>
+        <li><a href="../Pages/vis2.html">Vis 2</a></li>
+        <li><a href="../Pages/vis3.html">Vis 3</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <h1 class="main-title">Avatar: Pandora</h1>
+    <h2 class="sub-title">The First Movie</h2>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Text and Image Section -->
+    <section class="text-image-section">
+      <div class="text-block">
+        <h2>Avatar: The Phenomenon</h2>
+        <p>The first Avatar movie follows Jake Sully, a Marine who traveled to the alien planet of Pandora and operates an "Avatar", a genetically engineered body that allows the human race to interact with the alien Na'vi species sent by a corporation to exploit Pandora's natural resources. But as Jake forms a bond with the Na'vi, he must decide whether he wishes to side with these people, or remain loyal to his employers.</p>
+        <p>Beyond the story, the film set a new standard for Visual Effects using both CGI and immersive VFX, along with that, it pioneered a virtual camera system that filmed fully digitally inside the digital world in real time. All these elements resulted in the film becoming the highest-grossing movie of all time, not only in the domestic market but internationally.</p>
+      </div>
+      <img src="Opt1.jpg" alt="Avatar Scene" class="side-image">
+    </section>
+
+    <!-- First Chart Container -->
+    <div class="chart-container">
+      <h3 class="chart-title">Regional Box Office Performance</h3>
+      <div class="chart-wrapper">
+        <div id="observablehq-viewof-selectedRegions-2cdee6a2"></div>
+        <div id="observablehq-vis1-2cdee6a2"></div>
+      </div>
+    </div>
+
+    <!-- Full Width Image Section -->
+    <section class="image-section">
+      <img src="Img2.jpeg" alt="Avatar Pandora Landscape" class="full-image">
+    </section>
+
+    <!-- Text Section -->
+    <section class="text-section">
+      <h2>Avatar: The Phenomenon</h2>
+      <p>With all the excitement surrounding the movie, one question we had was about the staying experience of the film, looking at the ticket sales over time, and comparing them with other films with similar levels of excitement. The goal for this analysis was to see if the film had any staying power after the hype of the initial release.</p>
+    </section>
+
+    <!-- Second Chart Container -->
+    <div class="chart-container">
+      <h3 class="chart-title">Ticket Sales Over Time</h3>
+      <div class="chart-wrapper">
+        <div id="observablehq-vis1-299f1f0f"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Avatar Project. All rights reserved.</p>
+  </footer>
+
+  <!-- Observable Scripts -->
+  <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/b82f70ba16deafdc@188.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "viewof selectedRegions") return new Inspector(document.querySelector("#observablehq-viewof-selectedRegions-2cdee6a2"));
+      if (name === "vis1") return new Inspector(document.querySelector("#observablehq-vis1-2cdee6a2"));
+      return ["filteredData","vis2"].includes(name);
+    });
+  </script>
+
+  <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/18b9cf26dc8a61e9@149.js?v=4";
+    new Runtime().module(define, name => {
+      if (name === "vis1") return new Inspector(document.querySelector("#observablehq-vis1-299f1f0f"));
+    });
+  </script>
+
+</body>
+</html>
