@@ -469,6 +469,7 @@
 }
 
 /* Chart Container */
+
 .chart-container {
   max-width: 1400px;
   margin: 3rem auto;
@@ -477,6 +478,7 @@
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  overflow: hidden; /* Prevent scrollbars */
 }
 
 .chart-title {
@@ -491,6 +493,26 @@
   padding: 2rem;
   border-radius: 12px;
   min-height: 400px;
+  width: auto; /* Ensure full width */
+  overflow: hidden; /* Prevent internal scrollbars */
+}
+
+/* Make Observable/Vega-Lite charts responsive */
+.chart-wrapper svg,
+.chart-wrapper canvas,
+.chart-wrapper .vega-embed,
+#observablehq-viewof-selectedRegions-2cdee6a2,
+#observablehq-vis1-2cdee6a2,
+#observablehq-vis1-299f1f0f {
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto;
+}
+
+/* Ensure Vega containers are responsive */
+.chart-wrapper .vega-embed details,
+.chart-wrapper .vega-embed details summary {
+  width: 100% !important;
 }
 
 /* Full Width Image Section */
@@ -585,3 +607,5 @@
     padding: 1rem;
   }
 }
+
+
