@@ -6,6 +6,9 @@
   <title>Avatar - Visualization 3</title>
   <link rel="stylesheet" href="../Index.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+
 </head>
 <body>
 
@@ -56,17 +59,15 @@
     </section>
 
     <!-- Full Width Image -->
-    <section class="image-section">
-      <img src="Img1.jpeg" alt="Avatar Comparison Visual" class="full-image">
-    </section>
-
-    <!-- Chart Container -->
     <div class="chart-container">
-      <h3 class="chart-title">Comparative Box Office Analysis</h3>
+      <h3 class="chart-title">Domestic and International Box Office Analysis</h3>
       <div class="chart-wrapper">
-        <div id="observablehq-vis3-c70827fb"></div>
+      <div id="observablehq-vis4-ffb4fa4a"></div>
       </div>
     </div>
+
+
+   
 
     <!-- Analysis Text Section -->
     <section class="text-section">
@@ -74,13 +75,16 @@
       <p>The data reveals important patterns in how audiences engaged with each film. While both achieved extraordinary success, the trajectory of their earnings reflects the changing entertainment landscape and evolving consumer preferences over the thirteen-year gap between releases.</p>
     </section>
 
-    <!-- Another Full Width Image -->
-    <section class="image-section">
-      <img src="Img1.jpeg" alt="Pandora Landscape" class="full-image">
-    </section>
+     <!-- Chart Container -->
+    <div class="chart-container">
+      <h3 class="chart-title"> Weekly ticket sales Analysis</h3>
+      <div class="chart-wrapper">
+        <div id="observablehq-vis3-c70827fb"></div>
+      </div>
+    </div>
 
     <!-- Conclusion Section -->
-    <section class="conclusion-section">
+    <section class="text-section">
       <h2>Looking Ahead: Avatar 3 and Beyond</h2>
       <p>The trends suggest that Avatar: Fire and Ash may not create a significant shift in theatre dynamics the way the first two films did. Avatar (2009) benefited from the explosive rise of 3D technology, while The Way of Water leveraged major advances in CGI and underwater performance capture, helping both films stand out in their eras.</p>
       <p>However, our analysis shows that recent years have not introduced any major new technological breakthroughs that could drive a similar surge in audience excitement. Regional box office performance also indicates that global markets have become more cautious, and domestic ticket sales continue to face competition from streaming habits established during the pandemic.</p>
@@ -102,6 +106,15 @@
       if (name === "vis3") return new Inspector(document.querySelector("#observablehq-vis3-c70827fb"));
     });
   </script>
+
+
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/18b9cf26dc8a61e9@184.js?v=4";
+new Runtime().module(define, name => {
+  if (name === "vis4") return new Inspector(document.querySelector("#observablehq-vis4-ffb4fa4a"));
+});
+</script>
 
 </body>
 </html>

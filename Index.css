@@ -438,7 +438,7 @@
   padding: 4rem 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 12rem;
   align-items: center;
 }
 
@@ -456,8 +456,8 @@
 }
 
 .side-image {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 80%;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0, 212, 255, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -479,6 +479,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   overflow: hidden; /* Prevent scrollbars */
+  justify-items: center;
 }
 
 .chart-title {
@@ -532,8 +533,8 @@
 /* Text Section */
 .text-section {
   max-width: 1200px;
-  margin: 4rem auto;
-  padding: 3rem 2rem;
+  margin:0 auto;
+  padding: 6rem 2rem;
   text-align: center;
   color: #fff;
 }
