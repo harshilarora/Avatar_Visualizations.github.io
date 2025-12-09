@@ -369,7 +369,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  justify-items: center;
 }
 
 .text-image-section .text-block h2 {
@@ -386,8 +386,7 @@ footer {
 }
 
 .side-image {
-  width: 100%;
-  max-width: 100%;
+  max-width: 65%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 8px 30px rgba(0, 212, 255, 0.2);
