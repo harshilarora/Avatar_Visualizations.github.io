@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avatar - Visualization 1</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
   <link rel="stylesheet" href="../Index.css">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 
   
 </head>
@@ -49,8 +49,8 @@
     <div class="chart-container">
       <h3 class="chart-title">Regional Box Office Performance</h3>
       <div class="chart-wrapper">
-        <div id="observablehq-viewof-selectedRegions-7664f806"></div>
-        <div id="observablehq-vis1-7664f806"></div>
+        <div id="observablehq-viewof-selectedRegions-bc483096"></div>
+<div id="observablehq-vis1-bc483096"></div>
         <p class="gap-text">This visualization highlights the countries that contributed most to Avatar’s international earnings, making the differences between markets easy to understand. Countries appear along the vertical axis so that even long names remain readable, while the horizontal bars illustrate revenue amounts clearly and proportionally. The layout quickly draws attention to major performers, and China, France, and Japan stand out as essential pillars of the film’s overseas success. What this chart communicates especially well is the balance between regions and the extent to which the film depended on international viewership. By organizing countries side-by-side, the chart allows for immediate comparison and helps uncover the geographic patterns behind the film’s massive box office performance.
         </p>
       </div>
@@ -68,7 +68,7 @@
     <div class="chart-container">
       <h3 class="chart-title">Ticket Sales Over Time</h3>
       <div class="chart-wrapper">
-       <div id="observablehq-vis1-f82a4d00"></div>
+<div id="observablehq-vis1-795ac968"></div>
        <p class="gap-text">Looking at Avatar’s first 25 weeks in theatres shows how the film maintained audience interest far beyond its opening weekend. The timeline along the bottom captures the rhythm of its theatrical run, while the revenue scale on the left shows weekly earnings as they rise and fall. What stands out is the film’s remarkable stability: after a strong start, the decline in weekly revenue is gradual rather than sharp, indicating strong word-of-mouth and repeated viewings. This long-tail performance helps explain why Avatar climbed to record-breaking totals that it not only opened well but continued drawing viewers over several months. A line graph works well for this data because it clearly reveals trends and momentum, allowing viewers to see how engagement evolved over time.
       </p>
       </div>
@@ -84,19 +84,19 @@
   <!-- Observable Scripts -->
   <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/b82f70ba16deafdc@240.js?v=4";
+import define from "https://api.observablehq.com/d/b82f70ba16deafdc@246.js?v=4";
 new Runtime().module(define, name => {
-  if (name === "viewof selectedRegions") return new Inspector(document.querySelector("#observablehq-viewof-selectedRegions-7664f806"));
-  if (name === "vis1") return new Inspector(document.querySelector("#observablehq-vis1-7664f806"));
+  if (name === "viewof selectedRegions") return new Inspector(document.querySelector("#observablehq-viewof-selectedRegions-bc483096"));
+  if (name === "vis1") return new Inspector(document.querySelector("#observablehq-vis1-bc483096"));
   return ["filteredData","vis2"].includes(name);
 });
 </script>
 
   <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/18b9cf26dc8a61e9.js?v=4";
+import define from "https://api.observablehq.com/d/18b9cf26dc8a61e9@190.js?v=4";
 new Runtime().module(define, name => {
-  if (name === "vis1") return new Inspector(document.querySelector("#observablehq-vis1-f82a4d00"));
+  if (name === "vis1") return new Inspector(document.querySelector("#observablehq-vis1-795ac968"));
 });
 </script>
 
