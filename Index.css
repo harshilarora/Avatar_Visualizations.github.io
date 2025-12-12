@@ -398,6 +398,13 @@ footer {
   box-shadow: 0 12px 40px rgba(0, 212, 255, 0.4);
 }
 
+.chart-image {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  justify-items: center;
+}
+
 /* Chart Container */
 .chart-container {
   max-width: 1400px;
